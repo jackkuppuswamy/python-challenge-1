@@ -1,3 +1,6 @@
+"""
+
+"""
 # Menu dictionary
 menu = {
     "Snacks": {
