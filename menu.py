@@ -1,5 +1,25 @@
 """
+This script simulates a menu ordering system for a food truck. It allows customers
+to view different menu categories, select items with quantities, and calculate the 
+total cost of their order.
 
+Menu Structure:
+- The menu is structured as a nested dictionary where each top-level key represents
+  a menu category (e.g., Snacks, Meals, Drinks, Desserts).
+- Each category contains items represented as key-value pairs where the key is the
+  item name and the value is either a price (for simple items) or another dictionary
+  (for items with multiple options like sizes or toppings).
+
+Ordering Process:
+1. The script starts by greeting the customer and displaying available menu categories.
+2. The customer selects a menu category by entering its corresponding number.
+3. The script displays the items in the selected category with their prices.
+4. The customer selects an item by entering its number and specifies the quantity.
+5. The selected item (name, price, quantity) is added to the order list.
+6. The script prompts if the customer wants to continue ordering.
+7. Steps 2-6 repeat until the customer finishes ordering.
+8. Once the order is completed, the script prints a summary of the customer's order,
+   including item names, prices, quantities, and the total cost.
 """
 # Menu dictionary
 menu = {
